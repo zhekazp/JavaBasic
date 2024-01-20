@@ -1,4 +1,5 @@
-package homeWork;
+package homeWork.homeWork2;
+
 public class HomeWork2_1 {
     public static void main(String[] args) {
         // char: G int: 89 byte: 4 short: 56 float: 4.7333436 double: 4.355453532 long: 12121
