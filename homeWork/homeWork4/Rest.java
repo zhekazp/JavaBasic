@@ -1,4 +1,4 @@
-package homeWork.homeWork4;
+package homeWork4;
 
 public class Rest {
     int rest2;

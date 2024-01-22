@@ -1,0 +1,1 @@
+Work with console user input.
