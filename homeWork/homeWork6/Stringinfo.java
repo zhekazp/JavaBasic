@@ -28,7 +28,6 @@ public class Stringinfo {
         System.out.println("This is lower case  - "+mainWord.toLowerCase());
         System.out.println();
     }
-
     public void delWord(int index,int end){
         mainWord=mainWord.substring(0,index)+mainWord.substring(end);
         System.out.println("New word after deleting part of string with begin index  - "+index+" : "+mainWord);
