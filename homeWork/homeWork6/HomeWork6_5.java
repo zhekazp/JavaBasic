@@ -1,5 +1,8 @@
 package homeWork6;
 
+import homeWork6.classes.Numbers;
+import homeWork6.classes.UserInput;
+
 public class HomeWork6_5 {
     public static void main(String[] args) {
         UserInput ui=new UserInput();

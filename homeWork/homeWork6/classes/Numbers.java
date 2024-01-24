@@ -1,4 +1,4 @@
-package homeWork6;
+package homeWork6.classes;
 
 public class Numbers {
     public double addition(double a, double b){

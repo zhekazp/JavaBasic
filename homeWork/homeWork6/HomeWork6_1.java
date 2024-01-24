@@ -1,5 +1,7 @@
 package homeWork6;
 
+import homeWork6.classes.Stringinfo;
+
 public class HomeWork6_1 {
 
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package homeWork6;
 
+import homeWork6.classes.Pizza;
+
 public class HomeWork6_3 {
 
     public static void main(String[] args) {
