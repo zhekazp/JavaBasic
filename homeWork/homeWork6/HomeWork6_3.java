@@ -1,6 +1,7 @@
 package homeWork6;
 
 public class HomeWork6_3 {
+
     public static void main(String[] args) {
         Pizza p1=new Pizza(24);
         Pizza p2=new Pizza(28);
