@@ -1,1 +1,1 @@
-TwoObjects - Work with classes.
+TwoObjects,CircleDemo - Work with classes.
