@@ -1,6 +1,6 @@
 package homeWork6;
 
-import homeWork6.classes.UserInput;
+import classes.UserInput;
 
 public class HomeWork6_2 {
     public static void main(String[] args) {

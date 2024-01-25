@@ -1,4 +1,4 @@
-package homeWork6.classes;
+package classes;
 
 import java.util.Scanner;
 
@@ -6,9 +6,7 @@ public class UserInput {
     public String inputText(String text){
         System.out.println(text);
         Scanner ns=new Scanner(System.in);
-        String result=ns.nextLine();
-        //ns.close();
-        return result;
+        return ns.nextLine();
     }
     public int inputInt(String text){
         System.out.println(text);
@@ -18,8 +16,6 @@ public class UserInput {
     public double inputDouble(String text){
         System.out.println(text);
         Scanner ns=new Scanner(System.in);
-        double result =ns.nextDouble();
-        //ns.close();
-        return result;
+        return ns.nextDouble();
     }
 }

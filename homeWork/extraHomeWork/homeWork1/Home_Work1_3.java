@@ -1,5 +1,7 @@
 package homeWork1;
 
+import classes.UserInput;
+
 public class Home_Work1_3 {
     public static void main(String[] args) {
         UserInput ui=new UserInput();
