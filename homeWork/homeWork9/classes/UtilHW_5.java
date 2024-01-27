@@ -1,7 +1,7 @@
 package homeWork9.classes;
 
 public class UtilHW_5 {
-    public boolean isdigit(char a){
+    public boolean isDigit(char a){
         if((int)a>47 & (int)a<58){
             return true;
         }else{
