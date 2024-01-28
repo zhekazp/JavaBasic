@@ -18,4 +18,9 @@ public class UserInput {
         Scanner ns=new Scanner(System.in);
         return ns.nextDouble();
     }
+    public boolean inputBool(String text){
+        System.out.println(text+" (y/n)");
+        Scanner ns=new Scanner(System.in);
+        return ns.nextLine().equalsIgnoreCase("y");
+ }
 }

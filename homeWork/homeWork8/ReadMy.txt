@@ -1,0 +1,2 @@
+Work with classes and if.
+(User can create new book in library and change catalog and availability)
