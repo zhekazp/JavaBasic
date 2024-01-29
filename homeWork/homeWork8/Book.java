@@ -10,8 +10,6 @@ public class Book {
     public Book(String author, String name) {
         this.author = author;
         this.name = name;
-        catalogNumber=0;
-        siteQuantity=0;
     }
 
     public Book(String author, String name, int catalogNumber, int siteQuantity, boolean used) {
