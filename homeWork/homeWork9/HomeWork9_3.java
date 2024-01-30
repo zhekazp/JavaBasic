@@ -26,6 +26,8 @@ public class HomeWork9_3 {
             case 7:
                 System.out.println("Weekend");
                 break;
+            default:
+                System.out.println("Wrong input");
         }
     }
 }

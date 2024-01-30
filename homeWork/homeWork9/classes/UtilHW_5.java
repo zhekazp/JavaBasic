@@ -8,16 +8,17 @@ public class UtilHW_5 {
             return false;
         }
     }
-    public boolean getLucky(String num){
+    public void getLucky(String num){
         int firstSum=getInt(num.charAt(0))+getInt(num.charAt(1));
         int secondSum=getInt(num.charAt(2))+getInt(num.charAt(3));
         if (firstSum==secondSum){
-            return true;
+            System.out.println("You entered 'Lucky' number");
         }else{
-            return false;
+            System.out.println("You entered 'Unlucky' number");
         }
     }
-    public int getInt(char a){
+    private int getInt(char a){
+
         return (int) a-48;
     }
 }

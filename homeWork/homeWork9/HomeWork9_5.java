@@ -14,15 +14,11 @@ public class HomeWork9_5 {
         if (num.length()!=4){
            checkNumber=false;
         } else{
-            checkNumber=test.isDigit(num.charAt(0))&&test.isDigit(num.charAt(1))&&
-                    test.isDigit(num.charAt(2))&&test.isDigit(num.charAt(3));
+            checkNumber=test.isDigit(num.charAt(0)) && test.isDigit(num.charAt(1)) &&
+                    test.isDigit(num.charAt(2)) && test.isDigit(num.charAt(3));
         }
         if (checkNumber){
-            if(test.getLucky(num)){
-                System.out.println("You entered 'Lucky' number");
-            }else{
-                System.out.println("You entered 'Unlucky' number");
-            }
+            test.getLucky(num);
         }else {
             System.out.println("You entered incorrect string");
         }
