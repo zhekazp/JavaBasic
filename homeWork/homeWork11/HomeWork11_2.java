@@ -5,22 +5,21 @@ import classes.UserInput;
 public class HomeWork11_2 {
     public static void main(String[] args) {
         UserInput ui=new UserInput();
-        int n=ui.inputInt("Enter a number");
+        int n=ui.inputInt("Enter an integer number");
         boolean test=true;
 
-        for (int i=1;i<=n;i++){
-            if ((i != 1) && (i !=n)){
-                if( (n%i) == 0 ){
+        for (int i=2;i<n;i++){
+                    if( (n%i) == 0 ){
                     test=false;
                     break;
                 }
-            }
+
         }
 
         if(test){
-            System.out.println("Number is ease");
+            System.out.println("Number is simple");
         }else{
-            System.out.println("Number is not ease");
+            System.out.println("Number is not simple");
         }
     }
 }
