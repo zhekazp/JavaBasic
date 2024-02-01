@@ -3,7 +3,7 @@ package homeWork13.classes;
 import java.util.Arrays;
 
 public class ManagerHW1 {
-private int[] numbers=new int[4];
+private int[] numbers=new int[8];
 
     public ManagerHW1() {
         for (int i=0;i<numbers.length;i++){
