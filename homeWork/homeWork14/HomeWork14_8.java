@@ -1,4 +1,6 @@
-package homeWork14.classes;
+package homeWork14;
+
+import homeWork14.classes.Palindrome;
 
 public class HomeWork14_8 {
     public static void main(String[] args) {
