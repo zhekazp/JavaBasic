@@ -13,6 +13,21 @@ public class UserInput {
         Scanner ns=new Scanner(System.in);
         return ns.nextInt();
     }
+    public int inputPositiveInt(String text){
+        System.out.println(text);
+        Scanner ns=new Scanner(System.in);
+        String str=ns.nextLine();
+        if(checkDigit(str)){
+            int res= Integer.parseInt(str);
+            if(res>0){
+                return res;
+            }else{
+                return -1;
+            }
+        }else{
+            return -1;
+        }
+    }
     public double inputDouble(String text){
         System.out.println(text);
         Scanner ns=new Scanner(System.in);
@@ -23,4 +38,13 @@ public class UserInput {
         Scanner ns=new Scanner(System.in);
         return ns.nextLine().equalsIgnoreCase("y");
  }
+   private boolean checkDigit(String str){
+        boolean test=true;
+        for (int i=0;i<str.length() && test; i++ ){
+            if (!Character.isDigit(str.charAt(i))){
+                test=false;
+            }
+        }
+        return test;
+    }
 }
