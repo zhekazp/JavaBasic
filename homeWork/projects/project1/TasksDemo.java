@@ -6,7 +6,7 @@ import projects.project1.services.TaskManager;
 
 public class TasksDemo {
     public static void main(String[] args) {
-        ApplicationService app=new ApplicationService(10,false);
+        ApplicationService app=new ApplicationService(10,true);
 
     }
 }
