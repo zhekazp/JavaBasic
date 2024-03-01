@@ -16,7 +16,7 @@ public class PriorityQueue {
              while (!tasks.isEmpty()) {
                 Task temp=tasks.pollFirst();
 
-                if (temp.getPriority() > priority && insert) {
+                if (temp.getPriority() >= priority && insert) {
                     insert =false;
                     tempTasks.addLast(new Task(name, priority));
 

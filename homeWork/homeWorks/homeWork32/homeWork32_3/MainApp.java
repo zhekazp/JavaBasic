@@ -7,9 +7,11 @@ public class MainApp {
         PriorityQueue app=new PriorityQueue();
         app.addTask("Task1",5);
         app.addTask("Task2",2);
+        app.addTask("Task3",3);
         app.addTask("Task4",4);
         app.addTask("Task5",1);
         app.addTask("Task6",6);
+        app.addTask("Task7",3);
         while (!app.getTasks().isEmpty()){
             System.out.println(app.getHiPriorityTask());
         }
