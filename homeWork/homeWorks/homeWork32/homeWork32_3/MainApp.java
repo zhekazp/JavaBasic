@@ -12,7 +12,8 @@ public class MainApp {
         app.addTask("Task5",1);
         app.addTask("Task6",6);
         app.addTask("Task7",3);
-        while (!app.getTasks().isEmpty()){
+
+        for(int i=0;i<7;i++) {
             System.out.println(app.getHiPriorityTask());
         }
     }

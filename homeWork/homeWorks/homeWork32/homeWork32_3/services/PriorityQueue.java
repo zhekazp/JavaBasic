@@ -34,8 +34,6 @@ public class PriorityQueue {
         return tasks.pollLast();
     }
 
-    public Deque<Task> getTasks() {
-        return tasks;
-    }
+
 
 }
