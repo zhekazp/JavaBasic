@@ -33,7 +33,9 @@ public class Element {
     public void decreaseIndex(){
         index--;
     }
-
+    public void changeIndex(int value){
+        index+=value;
+    }
     public void setPreviousElement(Element previousElement) {
         this.previousElement = previousElement;
     }

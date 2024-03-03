@@ -21,7 +21,7 @@ public class MyLinkedList {
     //Add element by index
     public void add(int index,Object newObject){
         {
-            if(isIndexCorrect(index)){
+            if(index >= 0 && index <= currentFreeIndex){
                 if (size==0){
                     addFirst(newObject);
                 }else {
@@ -32,15 +32,21 @@ public class MyLinkedList {
                             Element newElement=new Element(newObject, index);
                             Element tempElement=getElement(index);
                             newElement.setPreviousElement(tempElement.getPreviousElement());
-                            tempElement.getPreviousElement().setNextElement(newElement);
+                            if(index==0){
+                                firstElement=newElement;
+                            }else {
+                                tempElement.getPreviousElement().setNextElement(newElement);
+                            }
                             newElement.setNextElement(tempElement);
                             tempElement.setPreviousElement(newElement);
-                            changeIndexesAfterAdd(newElement);
+                            changeIndexesAfterCorrection(newElement,1);
                             currentFreeIndex++;
                             size++;
                         }
                     }
                 }
+            }else{
+                System.out.println("Error. Adding is impossible. Wrong index - "+index);
             }
         }
     }
@@ -62,14 +68,6 @@ public class MyLinkedList {
         lastElement=newElement;
         currentFreeIndex++;
         size++;
-    }
-    // check if the index is correct for adding
-    private boolean isIndexCorrect(int index){
-        if(index<0 || index> currentFreeIndex){
-            System.out.println("Error. Wrong index");
-            return false;
-        }
-        return true;
     }
 
     //check if the objects  that added are same
@@ -95,9 +93,15 @@ public class MyLinkedList {
                 Element previous=tempElement.getPreviousElement();
                 if(index == 0){
                     firstElement = next;
+                    if(size==2){
+                        lastElement=firstElement;
+                    }
                 }
                 if(index == currentFreeIndex-1){
                     lastElement=previous;
+                    if(size==2){
+                        firstElement=lastElement;
+                    }
                 }
                 if (previous != null) {
                     previous.setNextElement(tempElement.getNextElement());
@@ -105,14 +109,14 @@ public class MyLinkedList {
                 if(next != null) {
                     next.setPreviousElement(tempElement.getPreviousElement());
                 }
-                changeIndexesAfterRemove(tempElement);
+                changeIndexesAfterCorrection(tempElement,-1);
                 currentFreeIndex--;
                 size--;
             } else {
-                System.out.println("Error. Wrong index");
+                System.out.println("Error. Removing is impossible. Wrong index - "+index);
             }
         }else{
-            System.out.println("Error. List is empty");
+            System.out.println("Error. Removing is impossible. List is empty");
         }
     }
 
@@ -146,6 +150,14 @@ public class MyLinkedList {
         }
     }
 
+    //Change all indexes (+ value) after removing or adding of element that stay after removed element
+    private void changeIndexesAfterCorrection(Element element, int value){
+        Element tempElement=element;
+        while (hasNext(tempElement)){
+            tempElement.getNextElement().changeIndex(value);
+            tempElement=tempElement.getNextElement();
+        }
+    }
     // check if the element has next element
     private boolean hasNext(Element element){
         return element.getNextElement() != null;
@@ -154,6 +166,7 @@ public class MyLinkedList {
     //return element by index
     public Object get(int index){
         if(index<0 || index>=currentFreeIndex) {
+            System.out.println("Error. Getting is impossible. Index - "+index+" not exist");
             return null;
         }else{
             return getElement(index).getElement();
