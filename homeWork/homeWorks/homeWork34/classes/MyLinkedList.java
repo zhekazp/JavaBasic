@@ -131,8 +131,7 @@ public class MyLinkedList {
             tempElement=tempElement.getNextElement();
         }
     }*/
-
-    //Change all indexes after adding of element that stay after added element
+ //Change all indexes after adding of element that stay after added element
     private void changeIndexesAfterAdd(Element element){
         Element tempElement=element;
         while (hasNext(tempElement)){
@@ -140,7 +139,6 @@ public class MyLinkedList {
             tempElement=tempElement.getNextElement();
         }
     }
-
     //Change all indexes after removing of element that stay after removed element
     private void changeIndexesAfterRemove(Element element){
         Element tempElement=element;
