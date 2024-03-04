@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Company {
-    private TreeMap<String, Department> departmens=new TreeMap<>();
+    private Map<String, Department> departmens=new TreeMap<>();
     int employeeQuantity=0;
 
     public Company() {

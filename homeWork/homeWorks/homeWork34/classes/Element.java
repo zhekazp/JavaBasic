@@ -4,11 +4,9 @@ public class Element {
     private Object element;
     private Element nextElement;
     private Element previousElement;
-    int index;
 
-    public Element(Object element, int index) {
+    public Element(Object element) {
         this.element = element;
-        this.index = index;
     }
 
     public Object getElement() {
@@ -19,23 +17,10 @@ public class Element {
         return nextElement;
     }
 
-    public int getIndex() {
-        return index;
-    }
-
     public Element getPreviousElement() {
         return previousElement;
     }
 
-    public void increaseIndex(){
-        index++;
-    }
-    public void decreaseIndex(){
-        index--;
-    }
-    public void changeIndex(int value){
-        index+=value;
-    }
     public void setPreviousElement(Element previousElement) {
         this.previousElement = previousElement;
     }

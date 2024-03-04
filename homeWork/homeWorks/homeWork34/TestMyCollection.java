@@ -2,8 +2,6 @@ package homeWorks.homeWork34;
 
 import homeWorks.homeWork34.classes.MyLinkedList;
 
-import java.util.LinkedList;
-
 public class TestMyCollection {
     public static void main(String[] args) {
         MyLinkedList list=new MyLinkedList();
