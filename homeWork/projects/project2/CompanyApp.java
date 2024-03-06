@@ -1,10 +1,8 @@
 package projects.project2;
 
-import projects.project2.services.ApplicationService;
-
+import projects.project2.menus.MainMenu;
 public class CompanyApp {
     public static void main(String[] args) {
-        ApplicationService app=new ApplicationService();
-
+         MainMenu app=new MainMenu();
     }
 }

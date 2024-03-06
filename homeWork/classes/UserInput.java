@@ -40,11 +40,15 @@ public class UserInput {
  }
    private boolean checkDigit(String str){
         boolean test=true;
-        for (int i=0;i<str.length() && test; i++ ){
-            if (!Character.isDigit(str.charAt(i))){
-                test=false;
-            }
-        }
+       if(str.isEmpty()){
+           return false;
+       }else {
+           for (int i = 0; i < str.length() && test; i++) {
+               if (!Character.isDigit(str.charAt(i))) {
+                   test = false;
+               }
+           }
+       }
         return test;
     }
 }
