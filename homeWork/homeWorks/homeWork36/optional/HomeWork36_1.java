@@ -6,7 +6,7 @@ package homeWorks.homeWork36.optional;
     import java.util.Optional;
 
 
-    public class homeWork36_21 {
+    public class HomeWork36_1 {
 
         public Optional<String> stringFromList(List<String> list){
             return Optional.ofNullable(list.getFirst());
