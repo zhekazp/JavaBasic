@@ -13,6 +13,3 @@ public class HomeWork6 {
         System.out.println(list1);
     }
 }
-interface Connection<T>{
-    void connect(List<T> a,List<T> b);
-}
