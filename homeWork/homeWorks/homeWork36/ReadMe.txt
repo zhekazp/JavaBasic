@@ -30,6 +30,10 @@ Create an Optional class to represent a value that can absent.
 Implement the isPresent(), get() and orElse() methods.
 Use Generics to be able to store Optional objects different types.
 
+Task7
+Write a filter method that takes a list of objects and a predicate,
+and returns a list of objects that satisfy the predicate. Use Generics to provide the ability to pass
+a list of objects to a method any type.
 
 Task8
 Create a Map class to store key-value pairs. Implement Methods
