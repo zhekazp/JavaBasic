@@ -75,7 +75,19 @@ Write a method that receives a list of objects and a validation function,
 and returns an Optional with the first object in the list that matches
 conditions of the check function.
 
+Task2-7
+Write a method that receives a HashMap and returns Optional
+with the largest value associated with any key in the HashMap.
 
+Task2-8
+Write a method that receives a HashSet and a conversion function,
+and returns a HashSet with all values converted using conversion functions
+if HashSet is not empty. If HashSet is empty, the method returns an empty HashSet.
+
+Task2-9
+Write a method that receives a list of objects and a validation function,
+and returns an Optional with the first object in the list that matches
+conditions of the check function.
 
 Collections
 Task3-1
